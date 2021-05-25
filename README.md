@@ -20,11 +20,35 @@ Argument 5: Required for htseq-count. Read orientation: reverse or yes (forward)
 
 **Scripts for ORF prediction:**
 
---
+To define the set of translated genes in rat heart and liver, we used RiboTaper v1.3 (Calviello et al., 2016) with standard settings  to  detect  open  reading  frames.
+
+Further processing of RiboTaper output using the scripts in *ORF_Detection*
+
+-*select_ORFs_liver.R* and *select_ORFs_lv.R*: R script to extract different ORF types, e.g. CDS of known protein-coding genes, CDS of long non-coding RNAs, upstream ORFs etc. 
+
+-*process_detected_ORFs.R*: R script to combine all detected ORFs and calculate FPKM in order to filter by minimum expression cutoff
 
 **Scripts for QTL prediction:**
 
---
+QTL mapping was performed using the linear regression model-based Matrix eQTL v2.1.1 (Shabalin, 2012) - scripts in *QTL_mapping*.
+
+-*1_matrixETL.R*: main R script to run matrixEQTL for the different datasets
+
+-*2a_sort_qtl_results.R*, *2b_find_correct_SDP.R*, *2c_define_SDP_position.R* ad *2d_addFDR.R*: R scripts to further process QTL results
+
+-*3_run_permutations.R*: R script to run permutation testing for all datasets
+
+-*4_summarize_results_permutations.R*: R script to summarize all results and make venn diagrams
+
+**Scripts comparitive analysis of congenic rats:**
+
+To  replicate the translatome-wide phenotype, we performed  ribosome  profiling  on  two  congenic  rat  lines (McDermott-Roe  et  al.,  2011). Scripts for comparative analysis are in *DESeq_CongenicRats* 
+
+-*DESeq.R*
+
+-*Assess_LengthEffect.R*
+
+-*FC_GO_Term_plot.R*
 
 **Other scripts:**
 
