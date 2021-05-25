@@ -13,7 +13,7 @@ Argument 2: GTF file. In our article, we used a modified rat GTF file based on t
 Argument 3: STAR index to map the reads.
 Argument 4: Bowtie2 index with a list of rRNA, tRNA and mtDNA contaminants that should be removed from the Ribo-seq datasets.
 Argument 5: Class of reads. single (single-end RNA-seq), paired (paired-end RNA-seq), or ribo (single-end Ribo-seq).
-Argument 5: Required for htseq-count. Read orientiation: reverse or yes (forward).
+Argument 5: Required for htseq-count. Read orientation: reverse or yes (forward).
 ```
 Required software: 
 
