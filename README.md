@@ -22,7 +22,7 @@ Argument 5: Required for htseq-count. Read orientation: reverse or yes (forward)
 
 To define the set of translated genes in rat heart and liver, we used RiboTaper v1.3 (Calviello et al., 2016) with standard settings  to  detect  open  reading  frames.
 
-Further processing of RiboTaper out using the scripts in *ORF_Detection:
+Further processing of RiboTaper output using the scripts in *ORF_Detection*
 
 -*select_ORFs_liver.R* and *select_ORFs_lv.R*: R script to extract different ORF types, e.g. CDS of known protein-coding genes, CDS of long non-coding RNAs, upstream ORFs etc. 
 
