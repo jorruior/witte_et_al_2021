@@ -20,9 +20,7 @@ Argument 5: Required for htseq-count. Read orientation: reverse or yes (forward)
 
 **Scripts for ORF prediction:**
 
-To define the set of translated genes in rat heart and liver, we used RiboTaper v1.3 (Calviello et al., 2016) with standard settings  to  detect  open  reading  frames.
-
-Further processing of RiboTaper output using the scripts in *ORF_Detection*
+To define the set of translated genes in rat heart and liver, we used RiboTaper v1.3 (Calviello et al., 2016) with standard settings  to  detect  open  reading  frames. Further processing of RiboTaper output using the scripts in *ORF_prediction*
 
 -*select_ORFs_liver.R* and *select_ORFs_lv.R*: R script to extract different ORF types, e.g. CDS of known protein-coding genes, CDS of long non-coding RNAs, upstream ORFs etc. 
 
@@ -30,7 +28,7 @@ Further processing of RiboTaper output using the scripts in *ORF_Detection*
 
 **Scripts for QTL prediction:**
 
-QTL mapping was performed using the linear regression model-based Matrix eQTL v2.1.1 (Shabalin, 2012) - scripts in *QTL_mapping*.
+QTL mapping was performed using the linear regression model-based Matrix eQTL v2.1.1 (Shabalin, 2012) - scripts in *QTL_mapping*
 
 -*1_matrixETL.R*: main R script to run matrixEQTL for the different datasets
 
@@ -40,9 +38,15 @@ QTL mapping was performed using the linear regression model-based Matrix eQTL v2
 
 -*4_summarize_results_permutations.R*: R script to summarize all results and make venn diagrams
 
-**Scripts comparitive analysis of congenic rats:**
+**Scripts to explore QTL results:**
 
-To  replicate the translatome-wide phenotype, we performed  ribosome  profiling  on  two  congenic  rat  lines (McDermott-Roe  et  al.,  2011). Scripts for comparative analysis are in *DESeq_CongenicRats* 
+-*tissue_comparison.R*
+
+--
+
+**Scripts for comparitive analysis of congenic rats:**
+
+To  replicate the translatome-wide phenotype, we performed  ribosome  profiling  on  two  congenic  rat  lines (McDermott-Roe  et  al.,  2011). Scripts for comparative analysis are in *ComparativeAnalysis_CongenicRats* 
 
 -*DESeq.R*
 
@@ -56,7 +60,7 @@ To  replicate the translatome-wide phenotype, we performed  ribosome  profiling 
 
 -*stoichometry.R*: R script to calculate and plot stoichometries based on the congenics and RI RNA-seq and Ribo-seq data. In this script, two genes are plotted: ENSRNOG00000008536 and ENSRNOG00000033734.
 
-
+-*Process_CountData.R*: R script that contains a number of functions for NGS data wrangling, e.g. transformation of GTF into GenomicRanges object
 
 **Required software**: 
 
