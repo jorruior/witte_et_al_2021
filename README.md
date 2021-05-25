@@ -1,7 +1,5 @@
 # witte_et_al_2021
-This folder contains the scripts used to generate the main output tables in the article 'A trans locus causes a ribosomopathy in hypertrophic hearts that affects mRNA translation in a protein length-dependent fashion' by Franziska Witte, Jorge Ruiz-Orera et al., currently accepted for publication in Genome Biology (2021). These scripts can be used to map RNA-seq and Ribo-seq datasets, and use these mapped files to predict QTLs and estimate heritability, as well as to call different categories of translated ORFs. This is the main output that was used to build the Figures and Results. For the rest of methods, the used public software and the chosen parameters are described in each Methods section of the publication.
-
-License: GNU General Public License
+This folder contains the scripts used to generate the main output tables in the article 'A trans locus causes a ribosomopathy in hypertrophic hearts that affects mRNA translation in a protein length-dependent fashion' by Franziska Witte, Jorge Ruiz-Orera et al., currently accepted for publication in Genome Biology (2021). These scripts can be used to map RNA-seq and Ribo-seq datasets, and use these mapped files to predict QTLs and estimate heritability, as well as to call different categories of translated ORFs. With the generated output, we generated all Figures and Results. For the rest of methods, the used public software and parameters are described in the Methods section.
 
 **Mapping scripts:**
 
@@ -26,3 +24,6 @@ Argument 5: Required for htseq-count. Read orientiation: reverse or yes (forward
 -calculate_h2.R: R script to estimate heritability based on the variance of replicates (BXH13 and BXH12). The script uses as input a table with the raw counts per replicate (3 vs 3, "replicate_counts.txt"). Afterwards, power was calculated using this online tool: https://github.com/Dashbrook/BXD_power_calculator_app
 
 -stoichometry.R: R script to calculate and plot stoichometries based on the congenics and RI RNA-seq and Ribo-seq data. In this script, two genes are plotted: ENSRNOG00000008536 and ENSRNOG00000033734.
+
+
+License: GNU General Public License
