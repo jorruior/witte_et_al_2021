@@ -6,7 +6,7 @@ This folder contains the scripts used to generate the main output tables in the 
 --
 
 
--map_reads_v2.sh: Second bash script to map sequencing reads based on STAR [https://www.ncbi.nlm.nih.gov/pubmed/23104886]. Input parameters:
+-map_reads_v2.sh: Second bash script to map sequencing reads based on the STAR mapper [https://www.ncbi.nlm.nih.gov/pubmed/23104886]. Input parameters:
 ```
 Argument 1: Fastq file(s) (single or paired). Filenames should end in '.fastq.gz'
 Argument 2: GTF file. In our article, we used a modified rat GTF file based on the Ensembl v.82 release, including *Ttn* gene and masking the duplicated SURF locus (chr3:4,861,753-4,876,317 was masked and chr3:5,459,480-5,459,627 was included).
@@ -15,6 +15,13 @@ Argument 4: Bowtie2 index with a list of rRNA, tRNA and mtDNA contaminants that 
 Argument 5: Class of reads. single (single-end RNA-seq), paired (paired-end RNA-seq), or ribo (single-end Ribo-seq).
 Argument 5: Required for htseq-count. Read orientiation: reverse or yes (forward).
 ```
+Required software: 
+
+-trim_galore (v.0.6.1): https://github.com/FelixKrueger/TrimGalore
+-bowtie2 (v2.3.4.3): https://github.com/BenLangmead/bowtie2
+-STAR (v2.7.1a): https://github.com/alexdobin/STAR
+-htseq-count (0.11.1): https://github.com/htseq/htseq
+
 
 **Scripts for ORF prediction:**
 
