@@ -30,6 +30,18 @@ Further processing of RiboTaper output using the scripts in *ORF_Detection*
 
 **Scripts for QTL prediction:**
 
+QTL mapping was performed using the linear regression model-based Matrix eQTL v2.1.1 (Shabalin, 2012) - scripts in *QTL_mapping*.
+
+-*1_matrixETL.R*: main R script to run matrixEQTL for the different datasets
+
+-*2a_sort_qtl_results.R*, *2b_find_correct_SDP.R*, *2c_define_SDP_position.R* ad *2d_addFDR.R*: R scripts to further process QTL results
+
+-*3_run_permutations.R*: R script to run permutation testing for all datasets
+
+-*4_summarize_results_permutations.R*: R script to summarize all results and make venn diagrams
+
+**Scripts for differential expression analysis in congenic rats:**
+
 --
 
 **Other scripts:**
