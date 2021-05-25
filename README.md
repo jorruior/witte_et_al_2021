@@ -40,9 +40,15 @@ QTL mapping was performed using the linear regression model-based Matrix eQTL v2
 
 -*4_summarize_results_permutations.R*: R script to summarize all results and make venn diagrams
 
-**Scripts for differential expression analysis in congenic rats:**
+**Scripts comparitive analysis of congenic rats:**
 
---
+To  replicate the translatome-wide phenotype, we performed  ribosome  profiling  on  two  congenic  rat  lines (McDermott-Roe  et  al.,  2011). Scripts for comparative analysis are in *DESeq_CongenicRats* 
+
+-*DESeq.R*
+
+-*Assess_LengthEffect.R*
+
+-*FC_GO_Term_plot.R*
 
 **Other scripts:**
 
