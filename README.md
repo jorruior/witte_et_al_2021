@@ -15,12 +15,6 @@ Argument 4: Bowtie2 index with a list of rRNA, tRNA and mtDNA contaminants that 
 Argument 5: Class of reads. single (single-end RNA-seq), paired (paired-end RNA-seq), or ribo (single-end Ribo-seq).
 Argument 5: Required for htseq-count. Read orientation: reverse or yes (forward).
 ```
-Required software: 
-
--trim_galore (v.0.6.1): https://github.com/FelixKrueger/TrimGalore
--bowtie2 (v2.3.4.3): https://github.com/BenLangmead/bowtie2
--STAR (v2.7.1a): https://github.com/alexdobin/STAR
--htseq-count (0.11.1): https://github.com/htseq/htseq
 
 
 **Scripts for ORF prediction:**
@@ -37,5 +31,15 @@ Required software:
 
 -stoichometry.R: R script to calculate and plot stoichometries based on the congenics and RI RNA-seq and Ribo-seq data. In this script, two genes are plotted: ENSRNOG00000008536 and ENSRNOG00000033734.
 
+
+Required software: 
+
+-trim_galore (v.0.6.1): https://github.com/FelixKrueger/TrimGalore
+
+-bowtie2 (v2.3.4.3): https://github.com/BenLangmead/bowtie2
+
+-STAR (v2.7.1a): https://github.com/alexdobin/STAR
+
+-htseq-count (0.11.1): https://github.com/htseq/htseq
 
 License: GNU General Public License
