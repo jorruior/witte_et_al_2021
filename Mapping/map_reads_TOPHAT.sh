@@ -5,7 +5,7 @@ fastq=$1 #Files should end in '.fastq.gz'
 gtf=$2
 tophat_index=$3
 contaminant_bowtie_index=$4
-class=$5 #single,paired,ribo
+class=$5 #single,paired,ribo,rna29(RNA-seq reads trimmed to 29bp)
 orient=$6 #yes,reverse, depending on the orientation of the reads for htseq-count
 
 if [ $class == "single" ]
