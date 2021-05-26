@@ -32,7 +32,7 @@ then
   --outTmpKeep none
 
   samtools index $bf1/$ff1\Aligned.sortedByCoord.out.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/$ff1\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff1.htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/$ff1\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff1.htseq.cds.unique.counts
 
@@ -65,7 +65,7 @@ then
   --outTmpKeep none
 
   samtools index $bf1/$ff1\Aligned.sortedByCoord.out.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/$ff1\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff1.htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/$ff1\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff1.htseq.cds.unique.counts
 
@@ -96,7 +96,7 @@ then
   --outTmpKeep none
 
   samtools index $bf1/$ff1\Aligned.sortedByCoord.out.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/$ff1\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff1.htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/$ff1\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff1.htseq.cds.unique.counts
 
@@ -128,7 +128,7 @@ then
   --outTmpKeep none  
 
   samtools index $bf1/$ff2\Aligned.sortedByCoord.out.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/$ff2\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff2.htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/$ff2\Aligned.sortedByCoord.out.bam $gtf > $bf1/$ff2.htseq.cds.unique.counts
 
