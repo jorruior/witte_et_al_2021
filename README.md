@@ -7,7 +7,7 @@ This folder contains the scripts used to generate the main output tables in the 
 -*map_reads_TOPHAT.sh*: First bash script to map sequencing reads based on the Tophat mapper [https://doi.org/10.1186/gb-2013-14-4-r36]. Input parameters:
 ```
 Argument 1: Fastq file(s) (single or paired). Filenames should end in '.fastq.gz'
-Argument 2: GTF file. In our article, we used a modified rat GTF file based on the Ensembl v.82 release, including *Ttn* gene and masking the duplicated SURF locus (chr3:4,861,753-4,876,317 was masked and chr3:5,459,480-5,459,627 was included).
+Argument 2: GTF file. In our article, we used a modified rat GTF file based on the Ensembl v.82 release, including Ttn (not annotated) and masking the duplicated SURF locus (chr3:4,861,753-4,876,317 was masked and chr3:5,459,480-5,459,627 was included).
 Argument 3: Tophat2 index to map the reads.
 Argument 4: Bowtie2 index with a list of rRNA, tRNA and mtDNA contaminants that should be removed from the Ribo-seq datasets.
 Argument 5: Read class. Arguments: 'single' (single-end RNA-seq), 'paired' (paired-end RNA-seq), 'ribo' (single-end Ribo-seq), or 'rna29' (single-end RNA-seq trimmed to 29bp).
@@ -18,7 +18,7 @@ Argument 6: Required for htseq-count. Read orientation: reverse or yes (forward)
 -*map_reads_STAR.sh*: Second bash script to map sequencing reads based on the STAR mapper [https://doi.org/10.1093/bioinformatics/bts635]. Input parameters:
 ```
 Argument 1: Fastq file(s) (single or paired). Filenames should end in '.fastq.gz'
-Argument 2: GTF file. In our article, we used a modified rat GTF file based on the Ensembl v.82 release, including *Ttn* gene and masking the duplicated SURF locus (chr3:4,861,753-4,876,317 was masked and chr3:5,459,480-5,459,627 was included).
+Argument 2: GTF file. In our article, we used a modified rat GTF file based on the Ensembl v.82 release, including Ttn (not annotated) and masking the duplicated SURF locus (chr3:4,861,753-4,876,317 was masked and chr3:5,459,480-5,459,627 was included).
 Argument 3: STAR index to map the reads.
 Argument 4: Bowtie2 index with a list of rRNA, tRNA and mtDNA contaminants that should be removed from the Ribo-seq datasets.
 Argument 5: Read class. Arguments: 'single' (single-end RNA-seq), 'paired' (paired-end RNA-seq), 'ribo' (single-end Ribo-seq), or 'rna29' (single-end RNA-seq trimmed to 29bp).
