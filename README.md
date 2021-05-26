@@ -68,6 +68,8 @@ To  replicate the translatome-wide phenotype, we performed  ribosome  profiling 
 
 -bowtie2 (v2.3.4.3): https://github.com/BenLangmead/bowtie2
 
+-Tophat2 (v.2.1.0): https://ccb.jhu.edu/software/tophat/index.shtml
+
 -STAR (v2.7.1a): https://github.com/alexdobin/STAR
 
 -htseq-count (0.11.1): https://github.com/htseq/htseq
