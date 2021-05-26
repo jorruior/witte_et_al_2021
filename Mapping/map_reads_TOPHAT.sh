@@ -24,7 +24,7 @@ then
   $bf1/$ff1
 
   samtools index $bf1/accepted_hits.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/accepted_hits.bam $gtf > $bf1/htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/accepted_hits.bam $gtf > $bf1/htseq.cds.unique.counts
 
@@ -48,7 +48,7 @@ then
   $bf1/$ff2
 
   samtools index $bf1/accepted_hits.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/accepted_hits.bam $gtf > $bf1/htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/accepted_hits.bam $gtf > $bf1/htseq.cds.unique.counts
 
@@ -72,7 +72,7 @@ then
   $bf1/$ff1
 
   samtools index $bf1/accepted_hits.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/accepted_hits.bam $gtf > $bf1/htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/accepted_hits.bam $gtf > $bf1/htseq.cds.unique.counts
 
@@ -97,7 +97,7 @@ then
   $bf1/$ff2
 
   samtools index $bf1/accepted_hits.bam
-  echo "Counting, reverse by default"
+  echo "Counting"
   htseq-count -f bam -r pos -s $orient $bf1/accepted_hits.bam $gtf > $bf1/htseq.exon.unique.counts
   htseq-count -f bam -r pos -s $orient -t CDS $bf1/accepted_hits.bam $gtf > $bf1/htseq.cds.unique.counts
 
