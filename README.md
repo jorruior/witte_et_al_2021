@@ -50,7 +50,6 @@ QTL mapping was performed using the linear regression model-based Matrix eQTL v2
 
 -*tissue_comparison.R*
 
---
 
 **Scripts for comparitive analysis of congenic rats:**
 
